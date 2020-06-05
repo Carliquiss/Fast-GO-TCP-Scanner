@@ -3,6 +3,10 @@ Script to scan quite fast all TCP ports from an IP
 
 Usage: 
 ```
+./fastTCPscan -host=IP -range=80,100,1000-2000  -threads=1000 -timeout=1 
+```
+or if you have Go installed: 
+```
 go run fastTCPscan.go -host=IP -range=80,100,1000-2000  -threads=1000 -timeout=1 
 ```
 Default port scan: all 65535 ports  
